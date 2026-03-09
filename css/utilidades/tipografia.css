@@ -1,0 +1,126 @@
+.font1-m-pd {
+  font-family: "Playfair Display";
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+.font2-g-pd {
+  color: var(--cor-0);
+  font-family: "Playfair Display";
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.font3-extit-pd {
+  font-family: "Playfair Display";
+  font-size: 3rem;
+  text-align: center;
+}
+
+.font4-m-ms {
+  font-size: 1.5rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.font5-p-ms {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.font6-p-pd {
+  font-size: 0.875rem;
+  font-family: "Playfair Display";
+  font-weight: 800;
+}
+
+.font7-exg-pd {
+  font-size: 4.125rem;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+}
+
+.font8-g-ms {
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+.font9-logo-g {
+  font-size: 1.875rem;
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
+
+@media (max-width: 1310px) {
+  .font1-m-pd {
+    font-size: 1rem;
+  }
+
+  .font2-g-pd {
+    font-size: 1.75rem;
+  }
+  .font3-extit-pd {
+    font-size: 2.5rem;
+    margin: 100px 0 100px;
+  }
+  .font4-m-ms {
+    font-size: 1rem;
+  }
+
+  .font5-p-ms {
+    font-size: 0.85rem;
+  }
+  .font7-exg-pd {
+    font-size: 3.75rem;
+  }
+  .font8-g-ms {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .font1-m-pd {
+    font-size: 0.875rem;
+  }
+  .font2-g-pd {
+    font-size: 1.25rem;
+  }
+  .font3-extit-pd {
+    font-size: 2rem;
+  }
+  .font5-p-ms {
+    font-size: 0.75rem;
+  }
+  .font6-p-pd {
+    font-size: 0.875rem;
+  }
+  .font7-exg-pd {
+    font-size: 3rem;
+  }
+  .font8-g-ms {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .font2-g-pd {
+    font-size: 1.125rem;
+  }
+  .font3-extit-pd {
+    font-size: 26px;
+  }
+
+  .font4-m-ms {
+    font-size: 1rem;
+  }
+  .font5-p-ms {
+    font-size: 0.75rem;
+  }
+  .font8-g-ms {
+    font-size: 0.75rem;
+  }
+}

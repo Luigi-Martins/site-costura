@@ -1,0 +1,82 @@
+.ultimos-produtos h1 {
+  color: #000;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.ultimos-produtos h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.container-portfolio {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-itens {
+  overflow: hidden;
+  width: 800px;
+}
+
+.carrossel {
+  display: flex;
+  transition: 1s;
+}
+
+.carrossel img {
+  width: 800px;
+  flex-shrink: 0;
+  border: 4px solid #000;
+}
+
+.voltar,
+.avancar {
+  position: absolute;
+  top: 50%;
+  width: 75px;
+  height: 75px;
+  background: rgba(90, 90, 90, 0.9);
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+}
+
+.voltar {
+  left: 25px;
+}
+
+.avancar {
+  right: 25px;
+}
+
+.avancar:hover,
+.voltar:hover {
+  transform: translateY(-50%) scale(1.2);
+  transition: 0.3s;
+}
+
+.avancar::before,
+.voltar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+}
+
+.avancar::before {
+  border-top: 8px solid var(--cor-2);
+  border-right: 8px solid var(--cor-2);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.voltar::before {
+  border-top: 8px solid var(--cor-2);
+  border-left: 8px solid var(--cor-2);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

@@ -1,0 +1,79 @@
+.bg-footer {
+  background-color: #fde2e4;
+}
+
+.footer {
+  display: grid;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  grid-template-columns: 3fr 6fr 3fr;
+  place-items: center;
+  width: 100%;
+}
+
+.footer-informacoes li:hover {
+  color: var(--cor-3);
+}
+
+.footer-redes {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.logotipo-footer a:hover {
+  color: var(--cor-3);
+}
+
+.footer-contato {
+  grid-template-columns: 3fr;
+}
+
+.footer-contato h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-contato li {
+  margin-bottom: 10px;
+  color: var(--cor-5);
+  font-weight: initial;
+}
+
+.logotipo-footer {
+  grid-template-columns: 6fr;
+}
+
+.footer-informacoes {
+  grid-template-columns: 3fr;
+}
+
+.footer-informacoes h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.footer-informacoes li {
+  margin-bottom: 10px;
+  color: var(--cor-5);
+  font-weight: initial;
+}
+
+@media (max-width: 750px) {
+  .footer {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    place-items: inherit;
+    gap: 20px;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .logotipo-footer {
+    grid-row: 1;
+  }
+  .footer-informacoes {
+    grid-row: 2;
+  }
+}

@@ -1,0 +1,36 @@
+.bg-biografia {
+  background-color: #e1c699;
+}
+.biografia-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  justify-content: center;
+}
+
+.titulo-bio {
+  align-content: center;
+  text-align: center;
+  margin: 0 50px;
+  text-transform: uppercase;
+}
+
+.conteudo-bio {
+  align-content: center;
+  text-align: left;
+  max-width: 900px;
+}
+
+@media (max-width: 950px) {
+  .biografia-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .biografia-conteudo img {
+    max-width: 300px;
+    max-height: 200px;
+    margin: 50px auto;
+  }
+  .conteudo-bio {
+    margin: 50px 20px;
+  }
+}

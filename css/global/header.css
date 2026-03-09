@@ -1,0 +1,40 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 25px 0;
+  background-color: var(--cor-1);
+}
+
+.menu li:hover {
+  color: var(--cor-3);
+}
+
+.logotipo:hover::after {
+  color: var(--cor-0);
+}
+
+.logotipo {
+  display: block;
+  width: 700px;
+  text-align: center;
+}
+
+@media (max-width: 1310px) {
+  .logotipo {
+    width: 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  .logotipo {
+    width: initial;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu {
+    gap: 40px;
+  }
+}

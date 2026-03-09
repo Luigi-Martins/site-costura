@@ -1,0 +1,54 @@
+.bg-depoimentos {
+  background-color: var(--cor-2);
+  padding-bottom: 150px;
+}
+
+.bg-depoimentos h3 {
+  padding-top: 50px;
+  margin: 100px 0;
+  text-align: center;
+}
+
+.depoimentos-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.depoimento-itens {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  text-align: left;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+.bg-itens {
+  min-height: 350px;
+  align-content: center;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.depoimento-itens p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 950px) {
+  .depoimentos-conteudo {
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .depoimento-itens {
+    margin: 25px 0;
+  }
+  .depoimento-itens:nth-child(3) {
+    display: none;
+  }
+  .bg-itens {
+    max-width: 200px;
+    min-height: 200px;
+    margin: 50px;
+  }
+}
